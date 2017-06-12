@@ -17,36 +17,19 @@ p {
 }
 
 #masterContainer {
-	width: 100%;
-	height: 100%;
-	@include greenBorder;
-}
+	width: device-width;
+	height: 100bh;
 
-$section-list: header page footer;
-
-@each $section in $section-list {
-	##{$section}Container {
-		width: $pageMobileWidth;
-		margin: 0 auto;
-
-		@include mediaTablet {
-			width: $pageTabletWidth;
-		}
-
-		@include mediaDesktop {
-			width: $pageFullWidth;
-		}
-	}
 }
 
 #headerContainer {
-	@include yellowBorder;
+
 }
 
 #pageContainer {
-	@include blueBorder;
+
 }
 
 #footerContainer {
-	@include redBorder;
+
 }
